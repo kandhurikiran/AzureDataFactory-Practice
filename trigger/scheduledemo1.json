@@ -1,0 +1,26 @@
+{
+	"name": "scheduledemo1",
+	"properties": {
+		"description": "This is the demonstration of the schedule trigger 1",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 5,
+				"startTime": "2021-02-21T22:58:00",
+				"endTime": "2021-02-22T22:58:00",
+				"timeZone": "E. Europe Standard Time"
+			}
+		}
+	}
+}

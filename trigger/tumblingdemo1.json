@@ -1,0 +1,29 @@
+{
+	"name": "tumblingdemo1",
+	"properties": {
+		"description": "this is the demo of the tumbling trigger",
+		"annotations": [
+			"demo"
+		],
+		"runtimeState": "Started",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "pipeline1",
+				"type": "PipelineReference"
+			}
+		},
+		"type": "TumblingWindowTrigger",
+		"typeProperties": {
+			"frequency": "Hour",
+			"interval": 12,
+			"startTime": "2021-02-21T23:01:00Z",
+			"endTime": "2021-02-22T23:01:00Z",
+			"delay": "00:00:00",
+			"maxConcurrency": 50,
+			"retryPolicy": {
+				"intervalInSeconds": 30
+			},
+			"dependsOn": []
+		}
+	}
+}
